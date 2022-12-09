@@ -19,6 +19,7 @@
   "rules": {
     "camelcase": "off",
     "import/no-unresolved": "error",
+    "@typescript-eslint/explicit-function-return-type": "warn",
     "@typescript-eslint/naming-convention": [
       "error",
       {
