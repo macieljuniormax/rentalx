@@ -47,7 +47,7 @@
     "import-helpers/order-imports": [
       "warn",
       {
-        "newlinesBetween": "always",
+        "newlinesBetween": "never",
         "groups": ["module", "/^@shared/", ["parent", "sibling", "index"]],
         "alphabetize": {
           "order": "asc",
