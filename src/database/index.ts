@@ -7,8 +7,8 @@ const AppDataSource = new DataSource({
   username: "docker",
   password: "ignite",
   database: "database_rentalx",
-  synchronize: true,
-  logging: false,
+  entities: ["./src/modules/**/entities/*.ts"],
+  migrations: ["./src/database/migrations/*.ts"],
 });
 
 AppDataSource.initialize()
@@ -18,3 +18,5 @@ AppDataSource.initialize()
   .catch((err) => {
     console.error("Error during Data Source initialization", err);
   });
+
+export default AppDataSource;
